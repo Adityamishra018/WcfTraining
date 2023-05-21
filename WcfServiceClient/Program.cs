@@ -11,7 +11,8 @@ namespace WcfServiceClient
         static void Main(string[] args)
         {
             var service = new HelloworldServiceClient();
-            Console.WriteLine(service.GetMessage("Aditya"));
+            var response = service.GetMessage("Aditya");
+            Console.WriteLine(response);
         }
     }
 }
